@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+    <title>repaso</title>
+</head>
+<body>
+    <h1>Bienvenido al Mini Proyecto</h1>
+    <p>Este proyecto muestra la integración de conceptos de HTML, CSS y JavaScript</p>
+    <h2>To Do List</h2>
+    <ul id="tarea-lista">
+        <li>Aprender a usar GitHub</li>
+        <li>Aprender a usar VSCode</li>
+    </ul>
+
+    <form id="todoForm">
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+        <button type="submit" class="agre">Agregar tarea</button>
+    </form>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        document.getElementById('todoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var tarea = document.getElementById("taskInput").value;
+
+            if (tarea === '') {
+                alert('Por favor, ingresa una tarea.');
+                return;
+            }
+
+            var li = document.createElement('li');
+            li.textContent = tarea;
+
+            var deleteBtn = document.createElement('span');
+            deleteBtn.textContent = '.';
+            deleteBtn.classList.add('.');
+            deleteBtn.addEventListener('click', function() {
+                li.parentNode.removeChild(li);
+            });
+
+            li.appendChild(deleteBtn);
+
+            document.getElementById('taskList').appendChild(li);
+
+            document.getElementById('taskInput').value = '';
+        }); 
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
