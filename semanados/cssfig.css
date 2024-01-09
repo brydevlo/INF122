@@ -1,0 +1,61 @@
+body{
+
+}
+
+.main{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.brochure{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+
+}
+.parrafo{
+    color: black;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+button{
+    
+
+    height: 100%;
+    background: #6F2CFF; 
+    border-radius: 5px;
+  
+}
+.primary-button{
+    color: white;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+   
+
+    
+}
+
+
+
+
+
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --purple: #6f2cff;
+    --ligth-purple: #efe9f9;
+    --red-heart: #a50954;
+    --blue-heart: #acd9b2;
+    --sm: 14px;
+    --md: 20px;
+    --lg: 60px;
+}
